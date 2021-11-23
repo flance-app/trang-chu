@@ -144,3 +144,8 @@
         }
     }
 }
+@include maxW(375px) {
+    .section-2 {
+       padding: 0;
+    }
+}

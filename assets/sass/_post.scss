@@ -6,7 +6,6 @@
     background-image: url(../images/post/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0;
 
     h1 {
         font-size: 48px;
@@ -413,18 +412,21 @@
         margin-top: 70px;
         // padding-left: 30px;
         max-width: 365px;
+
         h1 {
             font-size: 32px;
             text-align: left;
             padding-left: 20px;
             padding-right: 20px;
         }
+
         .hero-span {
             font-size: 14px;
             text-align: left;
             padding-left: 20px;
             padding-right: 20px;
         }
+
         .search {
             display: none;
         }
@@ -433,12 +435,15 @@
     .post {
         .space-100px {
 
-            height:20px;
+            height: 20px;
         }
+
         padding: 0;
+
         &-main {
             grid-template-columns: 1fr;
         }
+
         .title-section {
             font-size: 36px;
         }
@@ -446,12 +451,15 @@
 
     .exam {
         padding: 0;
+
         .title-section {
             font-size: 36px;
         }
+
         .span-section {
             font-size: 14px;
         }
+
         &-main {
             .item {
                 flex-direction: column;
@@ -472,13 +480,16 @@
                 .content {
                     padding: 20px;
                     padding-bottom: 30px;
+
                     .title {
                         font-size: 20px;
                         padding-bottom: 0px;
                     }
+
                     .local {
                         font-size: 12px;
                     }
+
                     .butn {
                         margin-bottom: 40px;
                         // padding-bottom: 30px;
@@ -487,5 +498,29 @@
                 }
             }
         }
+    }
+}
+
+@include maxW(375px) {
+    .hero-post {
+        max-width: 345px;
+
+        h1 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .hero-span {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .exam {
+        padding: 15px;
     }
 }

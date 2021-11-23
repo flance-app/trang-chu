@@ -1201,7 +1201,134 @@
     }
 }
 
-@include maxW(320px) {
+@include maxW(430px) {
+    .header {
+        height: 60px;
+
+        .navs {
+            &-logo {
+                img {
+                    width: 100px;
+                }
+
+            }
+
+            &-links {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                position: absolute;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+
+                .icon-close-nav {
+                    background-color: transparent;
+                    border: none;
+                    margin-right: 10px;
+                    width: 58px;
+                    height: 58px;
+                    // display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    ion-icon {
+                        font-size: 36px;
+                    }
+                }
+
+                transform: translateX(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                z-index: 19;
+
+                ul {
+                    height: auto;
+                    transform: translateY(50%);
+                    margin-right: 10px;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    li {
+                        a {
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .background-menu {
+                    display: none;
+                }
+
+                &-dropdown-1 {
+                    display: none;
+                }
+
+                &-dropdown-2 {
+                    display: none;
+                }
+
+                &-dropdown-3 {
+                    display: none;
+                }
+
+                &-dropdown-4 {
+                    display: none;
+                }
+            }
+
+            .nav-ative {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+            }
+
+            &-butn {
+                button.navs-butn-primary {
+                    display: none;
+                }
+
+                a.navs-butn-primary {
+                    display: block;
+                    // width: 115px;
+                    padding: 8px 18px;
+                    color: #1565D8;
+                    background-color: #1566d81e;
+                }
+
+                &-outline {
+                    font-size: 12px;
+                    display: none;
+                }
+
+                &-primary {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    padding: 8px 10px;
+                    border-radius: 5px;
+                    display: none;
+                }
+
+                .icon-open-nav {
+                    background: none;
+                    border: none;
+                    display: block;
+                    margin-left: 18px;
+
+                    .icon-humber {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include maxW(375px) {
     .header {
         height: 60px;
 

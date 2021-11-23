@@ -40,15 +40,7 @@ input::-ms-clear {
 }
 
 
-@include maxW(620px) {
-    .container {
-        padding: 0px 10px;
-    }
-    body {
-        font-size: 12px;
-        overflow-x: hidden;
-    }
-}
+
 
 
 .tag-blue {
@@ -95,6 +87,17 @@ input::-ms-clear {
     padding-bottom: 45px;
 }
 
+@include maxW(620px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+}
+
 @include maxW(430px) {
     .scroll-down .header {
         transform: translate3d(0, -100%, 0);
@@ -125,8 +128,12 @@ input::-ms-clear {
         padding-right: 50px;
     }
 }
+
 @include maxW(375px) {
     .container {
-        padding: 20px;
+        padding: 10px;
+    }
+    .container-fluid {
+        padding: 10px;
     }
 }

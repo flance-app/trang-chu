@@ -124,3 +124,16 @@
         }
     }
 }
+@include maxW(375px) {
+    .section-1 {
+        &-post {
+            .image-outter {
+                max-width: 100%;
+                height: 250px;
+            }
+            .title {
+                font-size: 26px;
+            }
+        }
+    }
+}
